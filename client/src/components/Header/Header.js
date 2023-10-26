@@ -2,7 +2,7 @@ import Button from '@mui/material/Button';
 import style from '../Header/style.module.scss'
 import { useState } from 'react';
 
-function Header() {
+export default function Header() {
 
     const [lang, setLang] = useState('EN')
 
@@ -38,5 +38,3 @@ function Header() {
         </div>
     )
 }
-
-export default Header;
