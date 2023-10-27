@@ -2,6 +2,7 @@ import { Button } from "@mui/material";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import style from '../HomePage/HomePage.module.scss'
+import Blog from "../../components/Blog/Blog";
 
 function HomePage() {
     return (
@@ -24,7 +25,11 @@ function HomePage() {
 
                 <div className={style.banner}></div>
 
-                <div className={style.blog}></div>
+                <div className={style.blog}>
+                    <h1>BLOG</h1>
+                    
+                    <Blog />
+                </div>
             </div>
 
             <Footer />

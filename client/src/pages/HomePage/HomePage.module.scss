@@ -53,6 +53,15 @@
         animation-direction: alternate;
 
     }
+
+    .blog {
+        h1 {
+            text-align: center;
+            color: var(--main-clean-white-ffffff, #FFF);
+            font: 600 40px Lexend;
+            line-height: 40px;
+        }
+    }
 }
 
 @keyframes moveVertical {

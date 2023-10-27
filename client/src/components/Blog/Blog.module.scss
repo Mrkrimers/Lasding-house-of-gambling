@@ -1,0 +1,35 @@
+.wrapper {
+    border-radius: 100px;
+    border: 3px solid var(--main-blue-478-bf-9, #478BF9);
+    background: var(--transp-white-white-12, rgba(255, 255, 255, 0.12));
+    backdrop-filter: blur(10px);
+
+    width: 530px;
+    height: 600px;
+
+    padding: 24px 30px 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    overflow-y: scroll;
+
+    .card {
+        border-radius: 196px;
+        background: var(--main-deep-blue-1-e-1231, #1E1231);
+        padding: 16px 64px;
+
+
+        p {
+            color: var(--main-clean-white-ffffff, #FFF);
+            font: 400 24px Lexend;
+            line-height: 28px;
+
+            &:last-child {
+                color: var(--transp-white-white-60, rgba(255, 255, 255, 0.60));
+                font: 450 14px Futura PT;
+                line-height: 16px;
+            }
+        }
+    }
+}
