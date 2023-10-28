@@ -1,5 +1,5 @@
 import Button from '@mui/material/Button';
-import style from '../Header/style.module.scss'
+import style from '../Header/Header.module.scss'
 import { useState } from 'react';
 
 export default function Header() {
@@ -16,7 +16,7 @@ export default function Header() {
             <nav className={style.nav}>
                 <p>About us</p>
                 <p>Brands</p>
-                <p>Brands</p>
+                <p>Commissions</p>
                 <p>News</p>
                 <p>Contact us</p>
                 <p>Careers</p>

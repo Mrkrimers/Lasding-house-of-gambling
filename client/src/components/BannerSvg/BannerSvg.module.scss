@@ -1,0 +1,30 @@
+.lineOne,
+.lineThree {
+    animation: moveVertical 5s ease infinite alternate;
+
+}
+
+.lineTwo {
+    animation: moveTwoVertical 5s ease infinite alternate;
+}
+
+@keyframes moveVertical {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(4%);
+    }
+
+}
+
+@keyframes moveTwoVertical {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-7%);
+    }
+}

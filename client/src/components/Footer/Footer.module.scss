@@ -1,4 +1,5 @@
 .wrapper {
+    position: relative;
     margin: auto;
     width: 1520px;
     padding: 40px 140px 24px 140px;
@@ -8,9 +9,9 @@
     border-right: 4px solid var(--main-blue-478-bf-9, #478BF9);
     border-left: 4px solid var(--main-blue-478-bf-9, #478BF9);
 
-
     display: flex;
     justify-content: space-between;
+    background: var(--main-deep-blue-1-e-1231, #1E1231);
 
     .nav {
         display: flex;
