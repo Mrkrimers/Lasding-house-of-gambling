@@ -38,8 +38,6 @@ function HomePage() {
                 </div>
             </div>
 
-
-
             <Footer />
         </div>
     )
