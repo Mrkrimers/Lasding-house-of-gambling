@@ -7,7 +7,7 @@ import BannerSvg from "../../components/BannerSvg/BannerSvg";
 
 function HomePage() {
     return (
-        <div className={style.wrapper}>
+        <div>
             <Header />
 
             <div className={style.main}>
