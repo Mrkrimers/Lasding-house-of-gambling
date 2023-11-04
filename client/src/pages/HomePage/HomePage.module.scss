@@ -48,7 +48,10 @@
         bottom: -7%;
         display: flex;
         gap: 12px;
-        // animation: moveVertical 5s ease infinite;
+    }
+
+    .wrapperMobileBanner {
+        display: none;
     }
 
     .blog {
@@ -63,6 +66,80 @@
             color: var(--main-clean-white-ffffff, #FFF);
             font: 600 40px Lexend;
             line-height: 40px;
+        }
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .main {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 12px;
+
+            h1 {
+                color: var(--main-clean-white-ffffff, #FFF);
+                text-align: center;
+                font: 500 46px Lexend;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                span:last-child {
+                    color: var(--main-blue-478-bf-9, #478BF9);
+                }
+            }
+
+            p {
+                color: var(--transp-white-white-60, rgba(255, 255, 255, 0.60));
+                font: 500 20px Lexend;
+                line-height: 26px;
+                text-align: center;
+            }
+
+            .btn {
+                margin-top: 25px;
+                text-align: center;
+
+                button {
+                    border-radius: 48px;
+                    text-align: center;
+                    padding: 15px 20px;
+                    font: 600 18px Lexend;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .wrapperBanner {
+            display: none;
+        }
+
+        .wrapperMobileBanner {
+            display: block;
+        }
+
+        .blog {
+            margin: 0 10px 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 18px;
+
+            h1 {
+                text-align: center;
+                color: var(--main-clean-white-ffffff, #FFF);
+                font: 600 32px Lexend;
+                line-height: 40px;
+            }
         }
     }
 }

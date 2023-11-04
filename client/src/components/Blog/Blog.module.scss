@@ -72,3 +72,60 @@
         }
     }
 }
+
+@media screen and (max-width:800px) {
+    .border {
+        border-radius: 50px;
+        border: 2px solid var(--main-blue-478-bf-9, #478BF9);
+        background: var(--transp-white-white-12, rgba(255, 255, 255, 0.12));
+
+        padding-right: 10px;
+        
+        width: auto;
+        height: 424px;
+
+        .wrapper {
+            margin: 0;
+            border-radius: 50px;
+            height: 421px;
+
+            padding: 10px 16px 10px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow-y: scroll;
+
+            .card {
+                border-radius: 40px;
+                background: var(--main-deep-blue-1-e-1231, #1E1231);
+                padding: 15px 35px;
+                transition: 0.5s;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 10px;
+
+                &:hover {
+                    background: var(--main-blue-478-bf-9, #478BF9);
+                    cursor: pointer;
+                }
+
+                p {
+                    color: var(--main-clean-white-ffffff, #FFF);
+                    font: 400 16px Lexend;
+                    line-height: 20px;
+
+
+                    &:last-child {
+                        color: var(--transp-white-white-60, rgba(255, 255, 255, 0.60));
+                        font: 450 14px Futura PT;
+                        line-height: 16px;
+
+                        font-feature-settings: 'liga' off;
+                    }
+                }
+            }
+        }
+    }
+}

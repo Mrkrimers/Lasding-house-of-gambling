@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header";
 import style from '../HomePage/HomePage.module.scss'
 import Blog from "../../components/Blog/Blog";
 import BannerSvg from "../../components/BannerSvg/BannerSvg";
+import MobileBannerSvg from "../../components/MobileBannerSvg/MobileBannerSvg";
 
 function HomePage() {
     return (
@@ -29,6 +30,12 @@ function HomePage() {
                     <BannerSvg id='first' />
                     <BannerSvg id='second' />
                     <BannerSvg id='third' />
+                </div>
+
+                <div className={style.wrapperMobileBanner}>
+                    <MobileBannerSvg id='first' />
+                    <MobileBannerSvg id='second' />
+                    <MobileBannerSvg id='third' />
                 </div>
 
                 <div className={style.blog}>
