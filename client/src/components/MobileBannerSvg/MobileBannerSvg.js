@@ -11,8 +11,6 @@ function MobileBannerSvg({ id }) {
         case "second":
             return (
                 <div className={style.lineTwo}>
-
-              
                 </div>
             );
 

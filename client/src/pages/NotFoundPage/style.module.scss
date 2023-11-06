@@ -1,0 +1,50 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('./assets/background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        color: #d1d0d0;
+
+        h1 {
+            font: 700 72px Lexend;
+            line-height: normal;
+        }
+
+        h4 {
+            font: 400 24px Lexend;
+            line-height: 160%;
+        }
+
+        p {
+            font: 400 16px Lexend;
+            line-height: 24px;
+
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+
+            a {
+                color: #d1d0d0;
+            }
+        }
+    }
+
+    .imgGost {
+        background-image: url('./assets/ghost-img\ 1.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 394px;
+        height: 413px;
+    }
+}

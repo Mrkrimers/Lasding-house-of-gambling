@@ -33,9 +33,9 @@ function HomePage() {
                 </div>
 
                 <div className={style.wrapperMobileBanner}>
-                    {/* <MobileBannerSvg id='first' /> */}
+                    <MobileBannerSvg id='first' />
                     <MobileBannerSvg id='second' />
-                    {/* <MobileBannerSvg id='third' /> */}
+                    <MobileBannerSvg id='third' />
                 </div>
 
                 <div className={style.blog}>

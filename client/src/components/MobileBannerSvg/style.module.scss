@@ -1,25 +1,51 @@
 .lineOne {
+    animation: moveVertical 5s linear infinite alternate;
+
     background-image: url('./assets/mobileLine1.svg');
     background-repeat: repeat-x;
     background-size: contain;
-    width: 800px;
+    width: 100vw;
     height: 50px;
 }
 
 .lineTwo {
+    animation: moveTwoVertical 5s linear infinite alternate;
+
     background-image: url('./assets/mobileLine2.svg');
     background-repeat: repeat-x;
     background-size: contain;
-    width: 800px;
+    width: 100vw;
     height: 50px;
-
-    display: inline;
 }
 
 .lineThree {
+    animation: moveVertical 5s linear infinite alternate;
+
     background-image: url('./assets/mobileLine3.svg');
     background-repeat: repeat-x;
     background-size: contain;
-    width: 800px;
+    width: 100vw;
     height: 50px;
+}
+
+
+@keyframes moveVertical {
+    0% {
+        background-position: left 0 top 0;
+    }
+
+    100% {
+        background-position: left -150px top 0;
+    }
+
+}
+
+@keyframes moveTwoVertical {
+    0% {
+        background-position: left 0 top 0;
+    }
+
+    100% {
+        background-position: left 150px top 0;
+    }
 }
