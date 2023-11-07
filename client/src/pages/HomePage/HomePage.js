@@ -5,8 +5,11 @@ import style from '../HomePage/HomePage.module.scss'
 import Blog from "../../components/Blog/Blog";
 import BannerSvg from "../../components/BannerSvg/BannerSvg";
 import MobileBannerSvg from "../../components/MobileBannerSvg/MobileBannerSvg";
+import { useNavigate } from "react-router-dom";
 
 function HomePage() {
+    const navigate = useNavigate()
+
     return (
         <div>
             <Header />
@@ -22,7 +25,7 @@ function HomePage() {
                     <p>Raise your ROI with direct advertiser</p>
 
                     <div className={style.btn}>
-                        <Button variant="contained">Become a Partner</Button>
+                        <Button onClick={() => navigate('/*')} variant="contained">Become a Partner</Button>
                     </div>
                 </div>
 

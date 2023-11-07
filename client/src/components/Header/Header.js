@@ -2,10 +2,13 @@ import Button from '@mui/material/Button';
 import style from '../Header/Header.module.scss'
 import { useState } from 'react';
 import MobileBurgerMenu from '../MobileBurgerMenu/MobileBurgerMenu';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 export default function Header() {
     const [menu, setMenu] = useState(true)
     const [lang, setLang] = useState('EN')
+    const navigate = useNavigate()
 
     const change = () => {
         lang === "EN" ? setLang('RU') : setLang('EN')
@@ -14,14 +17,13 @@ export default function Header() {
     return (
         <>
             <div className={style.wrapper}>
-
                 <nav className={style.nav}>
-                    <p>About us</p>
-                    <p>Brands</p>
-                    <p>Commissions</p>
-                    <p>News</p>
-                    <p>Contact us</p>
-                    <p>Careers</p>
+                    <Link to={'/*'}><p>About us</p></Link>
+                    <Link to={'/*'}><p>Brands</p></Link>
+                    <Link to={'/*'}> <p>Commissions</p></Link>
+                    <Link to={'/*'}> <p>News</p></Link>
+                    <Link to={'/*'}> <p>Contact us</p></Link>
+                    <Link to={'/*'}><p>Careers</p></Link>
                 </nav>
 
                 <div className={style.btnWrapper}>
@@ -33,9 +35,8 @@ export default function Header() {
                         <p>{lang}</p>
                     </div>
 
-                    <Button className={style.btn} variant="outlined">LOG IN</Button>
-                    <Button className={style.btn} variant="contained">SIGN UP</Button>
-
+                    <Button className={style.btn} onClick={() => navigate('/*')} variant="outlined">LOG IN</Button>
+                    <Button className={style.btn} onClick={() => navigate('/*')} variant="contained">SIGN UP</Button>
                 </div>
 
                 <div onClick={() => setMenu(!menu)}
