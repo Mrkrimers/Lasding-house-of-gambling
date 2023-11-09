@@ -49,3 +49,54 @@
         height: 413px;
     }
 }
+
+@media screen and (max-width:800px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            color: #d1d0d0;
+            text-align: center;
+
+            h1 {
+                font: 700 62px Lexend;
+                line-height: normal;
+            }
+
+            h4 {
+                font: 400 18px Lexend;
+                line-height: 160%;
+            }
+
+            p {
+                font: 400 16px Lexend;
+                line-height: 24px;
+
+                display: flex;
+                justify-content: space-between;
+                gap: 5px;
+
+                a {
+                    color: #d1d0d0;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .imgGost {
+            background-image: url('./assets/ghost-img\ 1.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 260px;
+            height: 290px;
+        }
+    }
+
+}
