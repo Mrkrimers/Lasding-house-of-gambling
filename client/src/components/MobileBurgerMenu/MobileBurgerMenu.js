@@ -9,11 +9,11 @@ function MobileBurgerMenu({ active }) {
         <div className={!active ? [style.wrapperContent, style.active].join(' ') : [style.wrapperContent]}>
             <nav className={style.nav}>
                 <p onClick={() => navigate('/*')}>About us</p>
-                <p>Brands</p>
-                <p>Commissions</p>
-                <p>News</p>
-                <p>Contact us</p>
-                <p>Careers</p>
+                <p onClick={() => navigate('/*')}>Brands</p>
+                <p onClick={() => navigate('/*')}>Commissions</p>
+                <p onClick={() => navigate('/*')}>News</p>
+                <p onClick={() => navigate('/*')}>Contact us</p>
+                <p onClick={() => navigate('/*')}>Careers</p>
             </nav>
 
             <div className={style.wrapperBtn}>
