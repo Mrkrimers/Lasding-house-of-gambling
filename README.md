@@ -1,7 +1,7 @@
 # Lasding-house-of-gambling
-Этот проект призван стать отправной точкой для веб-разработки и включает библиотеку React для создания динамических пользовательских интерфейсов, Sass в качестве препроцессора для расширенных возможностей стилизации и React Hooks для эффективного управления состоянием. 
+This project serves as a foundation for web development, leveraging the React library to create dynamic user interfaces. Sass is employed as the preprocessor for enhanced styling features, while React Hooks are utilized for efficient state management, promoting a more modular and functional code structure. 
 
-Frontend Technologies
+**Frontend Technologies**
 The frontend of EducationPlatform is built using the following technologies:
 
 React: The project utilizes the React library for building dynamic and interactive user interfaces.
